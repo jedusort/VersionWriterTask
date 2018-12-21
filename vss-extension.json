@@ -1,0 +1,63 @@
+{
+  "manifestVersion": 1,
+  "id": "VersionWriterTask",
+  "publisher": "Jedusoft",
+  "version": "1.0.0",
+  "name": "Version Writer",
+  "description": "A build task that override the <Version> tag on the .csproj or .vbproj file.",
+  "public": false,
+  "categories": [ "Build and release" ],
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "contributions": [
+    {
+      "id": "version-writer-build-task",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.task"
+      ],
+      "properties": {
+        "name": "VersionWriterTask"
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "VersionWriterTask"
+    }
+  ],
+  "content": {
+    "details": {
+      "path": "readme.md"
+    },
+    "license": {
+      "path": "license"
+    }
+  },
+  "links": {
+    "getstarted": {
+      "uri": "https://github.com/jedusort/VersionWriterTask"
+    },
+    "support": {
+      "uri": "https://github.com/jedusort/VersionWriterTask/issues"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "uri": "https://github.com/jedusort/VersionWriterTask"
+  },
+  "galleryFlags": [
+    "Public"
+  ],
+  "tags": [
+    "Project",
+    "Version",
+    "Build Variables"
+  ],
+  "icons": {
+    "default": "images/extension-icon.png"
+  }
+}
