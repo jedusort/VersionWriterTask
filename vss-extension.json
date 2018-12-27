@@ -6,7 +6,7 @@
   "name": "Version Writer",
   "description": "A build task that override the <Version> tag on the .csproj or .vbproj file.",
   "public": false,
-  "categories": [ "Build and release" ],
+  "categories": [ "Azure Pipelines" ],
   "targets": [
     {
       "id": "Microsoft.VisualStudio.Services"
